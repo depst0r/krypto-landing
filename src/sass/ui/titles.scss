@@ -1,0 +1,11 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
+.title-h6 {
+    @include title (small, red, 700, left, normal);
+    margin: 0;
+}
+
+.title-simple-text {
+    @include title (min, white, 400, center, normal);
+    margin: 0;
+}

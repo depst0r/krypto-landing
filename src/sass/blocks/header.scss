@@ -1,0 +1,33 @@
+@use '/src/sass/base/variables.scss' as *;
+.header {
+    height: 91px;
+    padding: 10px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        &-mobile {
+            display: none;
+        }
+        &-dekstop {
+            display: none;
+        }
+    }
+    &-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    &__gamburger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        .gamburger-line {
+            width: 25px;
+            height: 2px;
+            background-color: $white;
+        }
+    }
+}
