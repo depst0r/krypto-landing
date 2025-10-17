@@ -7,8 +7,23 @@
         justify-content: space-between;
     }
     &__nav {
+        position: relative;
         &-mobile {
-            display: none;
+            position: absolute;
+            width: 100%;
+            backdrop-filter: blur(15px);
+            border-top: 1px solid rgba(255, 136, 0, 0.2);
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            &.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
         }
         &-dekstop {
             display: none;
@@ -17,6 +32,11 @@
     &-nav {
         display: flex;
         flex-direction: column;
+        gap: 10px;
+        a {
+            text-align: left;
+            // padding: 10px 0;
+        }
     }
     &__gamburger {
         display: flex;
@@ -33,7 +53,7 @@
             transform: rotate(0);
             transition: all 1s;
         }
-        &--active {
+        &.active {
             border: 2px solid rgb(255, 136, 0);
             border-radius: 50%;
             width: 35px;
