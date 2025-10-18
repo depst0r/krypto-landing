@@ -9,3 +9,14 @@
     @include title (min, white, 400, center, normal);
     margin: 0;
 }
+
+@media screen and (min-width: 768px) {
+.title-simple-text {
+        @include title (xs, white, 400, center, normal);
+        margin: 0;
+    }
+.title-h6 {
+        @include title (large, red, 700, left, normal);
+        margin: 0;
+    }
+}

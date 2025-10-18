@@ -35,7 +35,6 @@
         gap: 10px;
         a {
             text-align: left;
-            // padding: 10px 0;
         }
     }
     &__gamburger {
@@ -75,6 +74,25 @@
                     width: 15px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        &__gamburger {
+            display: none;
+        }
+        &__nav {
+            &-dekstop {
+                display: flex;
+            }
+        }
+        &-nav {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+                gap: 25px;
         }
     }
 }
