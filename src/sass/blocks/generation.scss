@@ -1,3 +1,16 @@
+@use '/src/sass/base/variables.scss'as *;
+
 .generation {
     background: url('/src/img/bg/Background.png') center center / cover no-repeat;
+    &__info {
+        .timer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $dark;
+            border-radius: 64px;
+            height: 70px;
+            opacity: 0.5;
+        }
+    }
 }
