@@ -87,6 +87,13 @@
         &__nav {
             &-dekstop {
                 display: flex;
+                a {
+                    &:hover {
+                        color: $red;
+                        border-bottom: 3px solid rgb(255, 136, 0);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
             }
         }
         &-nav {

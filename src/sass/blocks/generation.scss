@@ -1,16 +1,36 @@
 @use '/src/sass/base/variables.scss'as *;
-
 .generation {
     background: url('/src/img/bg/Background.png') center center / cover no-repeat;
     &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         .timer {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: $dark;
+            gap: 7px;
             border-radius: 64px;
-            height: 70px;
-            opacity: 0.5;
+            max-width: 350px;
+            padding: 10px 24px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            h5 {
+                line-height: 0
+            }
+            span {
+                font-size: 10px;
+            }
+            &__block {
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                gap: 15px;
+            }
+            &__deviver {
+                margin-top: -10px;
+            }
         }
     }
 }

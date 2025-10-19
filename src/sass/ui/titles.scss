@@ -1,6 +1,5 @@
 @use '/src/sass/base/variables.scss' as *;
 @use '/src/sass/base/mixin.scss' as *;
-
 .title-h1 {
     @include title (medium, white, 700, center, normal)
 }
@@ -20,10 +19,16 @@
     margin: 0;
 }
 
+.title-simple-text-sm {
+    @include title (none, white, 400, center, normal);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .title-h6 {
         @include title (large, red, 700, left, normal);
-
     }
 }
 
