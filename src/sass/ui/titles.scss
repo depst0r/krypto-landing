@@ -26,6 +26,10 @@
     text-align: center;
 }
 
+.title-500 {
+    @include title (18px, white, 500, center, normal);
+}
+
 @media screen and (min-width: 768px) {
     .title-h6 {
         @include title (large, red, 700, left, normal);
