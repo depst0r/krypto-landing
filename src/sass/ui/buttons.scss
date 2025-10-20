@@ -1,0 +1,9 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
+.btn-primary {
+    @include button (176px, 55px, transparent, $white, 700, 16px, uppercase, 2px solid $red)
+}
+
+.btn-secondary {
+    @include button (176px, 55px, $red, $white, 700, 16px, uppercase, none)
+}
