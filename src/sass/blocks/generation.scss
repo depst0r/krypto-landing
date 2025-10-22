@@ -1,5 +1,6 @@
 @use '/src/sass/base/variables.scss'as *;
 .generation {
+    position: relative;
     background: url('/src/img/bg/Background.png') center center / cover no-repeat;
     padding-bottom: 109px;
     &__info {
