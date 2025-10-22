@@ -4,6 +4,10 @@
         font-size: 80px;
         line-height: 1.1;
     }
+    @else if $size==largeMax {
+        font-size: 64px;
+        line-height: 1.2;
+    }
     @else if $size==large {
         font-size: 40px;
         line-height: 1.2;

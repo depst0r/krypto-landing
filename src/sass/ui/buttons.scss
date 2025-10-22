@@ -7,3 +7,12 @@
 .btn-secondary {
     @include button (176px, 55px, $red, $white, 700, 16px, uppercase, none)
 }
+
+.btn-tertiary {
+    @include button (284px, 66px, transparent, $red, 500, 18px, normal, 2px solid $red)
+}
+
+.btn-tertiary:hover {
+    box-shadow: 0 0 40px 0 rgba(239, 68, 59, 0.4);
+    background: $dark;
+}
