@@ -1,6 +1,8 @@
 import '/src/sass/style.scss';
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import {
+    Navigation
+} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -88,36 +90,56 @@ window.addEventListener('DOMContentLoaded', () => {
 
     }
 
-//!Slider
+    //!Slider
+    try {
+        const creyptosSlider = new Swiper('.slider', {
+            modules: [Navigation],
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.icon-right-open',
+                prevEl: '.icon-left-open'
+            },
+            loop: true,
+            spaceBetween: 10,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 5
+                },
+                1440: {
+                    slidesPerView: 3,
+                    spaceBetween: 35
+                },
+            },
+        })
+        console.log('✅ 7. Swiper успешно инициализирован!');
+    } catch (error) {
+        console.error('❌ 8. Ошибка при инициализации Swiper:', error);
+    }
 
-try {
-    new Swiper('.slider', {
-        modules: [Navigation, Pagination],
-        slidesPerView: 1,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.icon-right-open',
-            prevEl: '.icon-left-open'
-        },
-        loop: true,
-        spaceBetween: 10,
-        breakpoints: {
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 5
-            },
-            1440: {
-                slidesPerView: 3,
-                spaceBetween: 35
-            },
-        },
-    })
-} catch (error) {
-    console.log(error.message)
-}
+    async function getCryptoData() {
+        try {
+            const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,cardano,solana,polkadot,dogecoin&per_page=6');
+
+            const data = await response.json();
+
+            const simpleData = data.map(coin => {
+                return {
+                    name: coin.name,
+                    price: coin.current_price,
+                    image: coin.image
+                };
+            });
+
+            console.log('Data-API:', simpleData);
+            return simpleData;
+
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    getCryptoData();
 
     setClock('.timer', deadLine)
     showMenu();

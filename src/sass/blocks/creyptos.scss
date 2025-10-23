@@ -1,0 +1,12 @@
+.creyptos {
+    padding-top: 91px;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        .title-simple-text {
+            opacity: 0.6;
+        }
+    }
+}
