@@ -74,8 +74,6 @@ body {
     padding: 0 16px;
 }
 
-<<<<<<< HEAD
-=======
 .coins {
     position: absolute;
     img {
@@ -99,21 +97,22 @@ body {
     }
 }
 
-// @keyframes rotateSlow {
-//     from {
-//         transform: rotate(0deg);
-//     }
-//     to {
-//         transform: rotate(360deg);
-//     }
-// }
+@keyframes rotateSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .coins {
         position: absolute;
         &#bitcoin {
             top: 8%;
             left: 15%;
-            width: 100%;
+            width: 100px;
         }
         &#monero {
             left: 85%;
@@ -125,7 +124,6 @@ body {
     }
 }
 
->>>>>>> 6b67104f92c91a4725bd2cdb1b3fe05db677e047
 @media screen and (min-width: 1024px) {
     .container {
         padding: 0 24px;

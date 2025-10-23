@@ -37,3 +37,13 @@
         gap: 10.5px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .trade {
+        &__columns {
+            display: flex;
+            align-items: center;
+            gap: 121px;
+        }
+    }
+}
