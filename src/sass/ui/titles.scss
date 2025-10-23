@@ -4,6 +4,10 @@
     @include title (medium, white, 700, center, normal)
 }
 
+.title-h2 {
+    @include title (medium, white, 700, center, normal)
+}
+
 .title-h5 {
     @include title (small, red, 500, center, normal);
     margin: 0;
@@ -39,6 +43,9 @@
 @media screen and (min-width: 1024px) {
     .title-h1 {
         @include title (large, white, 700, center, normal)
+    }
+    .title-h2 {
+        @include title (largeMax, white, 700, center, normal)
     }
 }
 

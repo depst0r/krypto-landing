@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 mobileNav.classList.toggle('active')
             })
 
-            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
         } catch (error) {
             console.error('Error initializing mobile menu:', error.message);
         }
