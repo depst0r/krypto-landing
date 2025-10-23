@@ -139,8 +139,27 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    getCryptoData();
+    async function addSlides() {
+        const cryptoData = await getCryptoData()
 
-    setClock('.timer', deadLine)
+        const slides = document.querySelector('.swiper-wrapper')
+
+        // slides.innerHTML = '';
+
+        //     cryptoData.forEach(crypto => {
+        //         const slide = document.createElement('div');
+        //         slide.className = 'swiper-slide';
+        //         slide.innerHTML = `
+        //     <img src="${crypto.image}" alt="${crypto.name}" class="creyptos__slider-slide">
+        //     <p>${crypto.name}: $${crypto.price}</p>
+        // `;
+        //         slides.appendChild(slide);
+        //     });
+
+    }
+
+
+    addSlides()
     showMenu();
+    setClock('.timer', deadLine)
 });
