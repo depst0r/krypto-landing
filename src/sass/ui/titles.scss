@@ -1,37 +1,45 @@
 @use '/src/sass/base/variables.scss' as *;
 @use '/src/sass/base/mixin.scss' as *;
 .title-h1 {
-    @include title (medium, white, 700, center, normal)
+    @include title (medium, $white, 700, center, normal)
 }
 
 .title-h2 {
-    @include title (medium, white, 700, center, normal)
+    @include title (medium, $white, 700, center, normal)
 }
 
 .title-h5 {
-    @include title (small, red, 500, center, normal);
+    @include title (small, $red, 500, center, normal);
     margin: 0;
 }
 
 .title-h6 {
-    @include title (small, red, 700, left, normal);
+    @include title (small, $red, 700, left, normal);
     margin: 0;
 }
 
 .title-simple-text {
-    @include title (min, white, 400, center, normal);
+    @include title (min, $white, 400, center, normal);
     margin: 0;
 }
 
 .title-simple-text-sm {
-    @include title (none, white, 400, center, normal);
+    @include title (none, $white, 400, center, normal);
     margin: 0;
     text-transform: uppercase;
     text-align: center;
 }
 
 .title-500 {
-    @include title (18px, white, 500, center, normal);
+    @include title (min18, $white, 500, center, normal);
+}
+
+.title-card {
+    @include title (small, $dark, 500, center, normal);
+}
+
+.card-subtitle {
+    @include title (min18, $dark, 400, center, normal);
 }
 
 @media screen and (min-width: 768px) {
