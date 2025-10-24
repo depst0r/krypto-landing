@@ -62,4 +62,22 @@
     text-transform: uppercase;
     color: $white;
     border: none;
+    cursor: pointer;
+}
+
+.creyptos__slider-wrapper {
+    overflow: hidden; 
+    position: relative;
+}
+
+.creyptos__slider {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    display: flex; 
+}
+
+.swiper-slide {
+    flex-shrink: 0; 
 }

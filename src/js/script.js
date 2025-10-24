@@ -102,9 +102,13 @@ window.addEventListener('DOMContentLoaded', () => {
             loop: true,
             spaceBetween: 10,
             breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 25
+                },
                 1200: {
                     slidesPerView: 3,
-                    spaceBetween: 5
+                    spaceBetween: 15
                 },
                 1440: {
                     slidesPerView: 3,

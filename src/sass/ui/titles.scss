@@ -9,12 +9,12 @@
 }
 
 .title-h5 {
-    @include title (small, $red, 500, center, normal);
+    @include title (small, red, 500, center, normal);
     margin: 0;
 }
 
 .title-h6 {
-    @include title (small, $red, 700, left, normal);
+    @include title (small, red, 700, left, normal);
     margin: 0;
 }
 
