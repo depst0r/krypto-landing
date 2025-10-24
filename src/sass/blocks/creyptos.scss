@@ -1,0 +1,32 @@
+.creyptos {
+    padding-top: 90px;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+
+    }
+    .title-simple-text {
+        opacity: 0.6;
+    }
+}
+
+
+.available-cryptos {
+    padding: 60px 0;
+    
+    .crypto-slider {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 20px 0;
+    }
+    
+    .crypto-card {
+        min-width: 200px;
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 12px;
+    }
+}

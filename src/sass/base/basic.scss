@@ -97,14 +97,14 @@ body {
     }
 }
 
-@keyframes rotateSlow {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+// @keyframes rotateSlow {
+//     from {
+//         transform: rotate(0deg);
+//     }
+//     to {
+//         transform: rotate(360deg);
+//     }
+// }
 
 @media screen and (min-width: 768px) {
     .coins {
