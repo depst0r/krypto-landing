@@ -148,17 +148,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
         const slides = document.querySelector('.swiper-wrapper')
 
-        // slides.innerHTML = '';
+        slides.innerHTML = '';
 
-        //     cryptoData.forEach(crypto => {
-        //         const slide = document.createElement('div');
-        //         slide.className = 'swiper-slide';
-        //         slide.innerHTML = `
-        //     <img src="${crypto.image}" alt="${crypto.name}" class="creyptos__slider-slide">
-        //     <p>${crypto.name}: $${crypto.price}</p>
-        // `;
-        //         slides.appendChild(slide);
-        //     });
+            cryptoData.forEach(crypto => {
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+                slide.innerHTML = `
+                <div class="swiper__columns">
+                    <div class="swiper__column-img">
+                        <img src="${crypto.image}" alt="${crypto.image}" class="slider-slide">
+                    </div>
+                    <div class="swiper__column-info">
+                        <span class="swiper__title title-card">${crypto.name}</span>
+                        <div class="swiper__price">
+                            <span class="price">$${crypto.price.toFixed(2)}</span>
+                            <button class="btn-slide" type="button">Trade now</button>
+                        </div>
+                    </div>
+                </div>
+        `;
+                slides.appendChild(slide);
+            });
 
     }
 
