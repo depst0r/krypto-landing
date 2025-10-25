@@ -1,0 +1,29 @@
+.platform {
+    margin-top: 40px;
+    background: url('/src/img/platform/Bg.png') center center / cover no-repeat;
+    height: 600px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        gap: 40px;
+    }
+    &__download {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .platform {
+        margin-top: 139px;
+        .title-h1 {
+            font-size: 72px;
+        }
+    }
+}
