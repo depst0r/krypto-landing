@@ -23,12 +23,18 @@
     margin: 0;
 }
 
+.title-card {
+    @include title (xs, $white, 500, center, normal);
+}
+
 .title-simple-text-sm {
     @include title (none, $white, 400, center, normal);
     margin: 0;
     text-transform: uppercase;
     text-align: center;
 }
+
+
 
 .title-500 {
     @include title (min18, $white, 500, center, normal);
@@ -54,6 +60,10 @@
     }
     .title-h2 {
         @include title (largeMax, white, 700, center, normal)
+    }
+
+    .title-card {
+        @include title (medium2, $white, 500, center, normal);
     }
 }
 
