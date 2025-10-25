@@ -1,0 +1,30 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.users {
+    padding-top: 91px;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__slider-wrapper {
+        overflow: hidden; 
+        position: relative;
+    }
+    .title-simple-text {
+        opacity: 0.6;
+    }
+    .swiper {
+        &-slide {
+            border: 2px solid $red;
+            border-radius: 12px;
+            max-width: 350px;
+            max-height: 450px;
+            background: transparent;
+            &:hover {
+                box-shadow: 0 0 40px 0 rgba(239, 68, 59, 0.4);
+            }
+        }
+    }
+}

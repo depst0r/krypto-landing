@@ -90,7 +90,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    //!Slider
+    //!Slider - crypto
     try {
         const creyptosSlider = new Swiper('.slider', {
             modules: [Navigation],
@@ -150,10 +150,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
         slides.innerHTML = '';
 
-            cryptoData.forEach(crypto => {
-                const slide = document.createElement('div');
-                slide.className = 'swiper-slide';
-                slide.innerHTML = `
+        cryptoData.forEach(crypto => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide';
+            slide.innerHTML = `
                 <div class="swiper__columns">
                     <div class="swiper__column-img">
                         <img src="${crypto.image}" alt="${crypto.image}" class="slider-slide">
@@ -167,9 +167,41 @@ window.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
         `;
-                slides.appendChild(slide);
-            });
+            slides.appendChild(slide);
+        });
+    }
 
+
+    //! Slider-users
+
+    try {
+        const usersSlider = new Swiper('.slider', {
+            modules: [Navigation],
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.icon-right-open',
+                prevEl: '.icon-left-open'
+            },
+            loop: true,
+            spaceBetween: 10,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 25
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+                1440: {
+                    slidesPerView: 3,
+                    spaceBetween: 35
+                },
+            },
+        })
+        console.log('✅ 7. Swiper успешно инициализирован!');
+    } catch (error) {
+        console.error('❌ 8. Ошибка при инициализации Swiper:', error);
     }
 
 
