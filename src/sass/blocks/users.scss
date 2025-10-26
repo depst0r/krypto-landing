@@ -22,9 +22,26 @@
             max-width: 350px;
             max-height: 450px;
             background: transparent;
+            padding: 67px 37px;
             &:hover {
                 box-shadow: 0 0 40px 0 rgba(239, 68, 59, 0.4);
             }
+        }
+        &-columns {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
+        &-user {
+            display: grid;
+            justify-items: center;
+            text-align: center;
+            gap: 5px;
+        }
+        &-comment {
+            text-align: center;
         }
     }
 }
