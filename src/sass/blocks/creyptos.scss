@@ -1,5 +1,4 @@
 @use '/src/sass/base/variables.scss'as *;
-
 .creyptos {
     padding-top: 90px;
     &__title {
@@ -7,7 +6,6 @@
         flex-direction: column;
         gap: 12px;
         text-align: center;
-
     }
     .title-simple-text {
         opacity: 0.6;
@@ -17,7 +15,6 @@
             margin-top: 80px;
         }
     }
-
 }
 
 .swiper {
@@ -33,9 +30,7 @@
             -webkit-backdrop-filter: blur(15px);
             mix-blend-mode: overlay;
             border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 
-                0 8px 32px 0 rgba(0, 0, 0, 0.1),
-                inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
         }
         &-info {
             display: flex;
@@ -50,6 +45,7 @@
     }
     &__title {
         text-align: center;
+        color: $dark;
     }
     &__sub {
         text-align: left;
@@ -62,6 +58,7 @@
         gap: 40px;
     }
 }
+
 .price {
     font-weight: 700;
     font-size: min(max(24px, 3vw), 36px);
@@ -84,7 +81,7 @@
 }
 
 .creyptos__slider-wrapper {
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
 }
 
@@ -93,12 +90,12 @@
 }
 
 .swiper-wrapper {
-    display: flex; 
+    display: flex;
     position: relative
 }
 
 .swiper-slide {
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .icon-left-open {
@@ -114,4 +111,4 @@
     left: 77%;
     z-index: 99999;
     transform: rotate(180deg);
-} 
+}

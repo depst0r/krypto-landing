@@ -22,6 +22,7 @@
     "vite": "^7.1.10"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "swiper": "^12.0.3"
   }
 }
