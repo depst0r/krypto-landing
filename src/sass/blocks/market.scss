@@ -1,0 +1,33 @@
+.market {
+    &__titles {
+        text-align: center;
+    }
+    .title-simple-text {
+        opacity: 0.6;
+    }
+    &__columns {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+    }
+    &__column {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        .column {
+            &__information {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, auto);
+                gap: 10px;
+            }
+            &__img {
+                justify-self: center;
+            }
+        }
+    }
+}
