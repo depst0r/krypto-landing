@@ -1,4 +1,7 @@
+@use '/src/sass/base/variables.scss'as *;
+
 .market {
+    padding-top: 91px;
     &__titles {
         text-align: center;
     }
@@ -6,6 +9,7 @@
         opacity: 0.6;
     }
     &__columns {
+        margin-top: 40px;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(4, 1fr);
@@ -27,6 +31,15 @@
             }
             &__img {
                 justify-self: center;
+                img {
+                    object-fit: cover;
+                }
+            }
+            &__link a{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: $red;
             }
         }
     }
@@ -36,12 +49,13 @@
 @media screen and (min-width: 768px) {
     .market {
         &__columns {
+            margin-top: 80px;
             grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(2, 1fr);
             gap: 30px;
         }
         &__column {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, auto);
             // max-width: 540px;
             align-items: center;
             text-align: left;
