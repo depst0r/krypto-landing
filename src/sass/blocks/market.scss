@@ -4,6 +4,9 @@
     padding-top: 91px;
     &__titles {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     .title-simple-text {
         opacity: 0.6;
@@ -41,6 +44,18 @@
                 line-height: 150%;
                 color: $red;
             }
+        }
+    }
+    &__btn {
+        padding-top: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 280px;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 5px;
         }
     }
 }
