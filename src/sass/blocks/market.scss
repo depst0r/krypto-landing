@@ -31,3 +31,25 @@
         }
     }
 }
+
+
+@media screen and (min-width: 768px) {
+    .market {
+        &__columns {
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+        }
+        &__column {
+            grid-template-columns: repeat(2, 1fr);
+            // max-width: 540px;
+            align-items: center;
+            text-align: left;
+            // max-height: 160px;
+            gap: 12px;
+            .title-card {
+                font-size: 24px;
+            }
+        }
+    }
+}
