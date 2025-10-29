@@ -1,5 +1,6 @@
 @use '/src/sass/base/variables.scss'as *;
 .creyptos {
+    position: relative;
     padding-top: 90px;
     &__title {
         display: flex;
@@ -15,6 +16,22 @@
             margin-top: 80px;
         }
     }
+
+    .coins {
+        position: absolute;
+    img {
+        animation: rotateSlow 20s linear infinite;
+    }
+    &.letecoin {
+        left: -3%;
+        top: 95%;
+    }
+    &.monero {
+        left: 6%;
+        top: 30%;
+    }
+
+}
 }
 
 .swiper {
@@ -111,4 +128,19 @@
     left: 77%;
     z-index: 99999;
     transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+.creyptos {
+    .coins {
+        &.letecoin {
+            left: 0%;
+            top: 100%;
+        }
+        &.monero {
+            left: 6%;
+            top: 23%;
+        }
+    }
+    }
 }

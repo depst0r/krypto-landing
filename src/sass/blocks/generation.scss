@@ -72,4 +72,46 @@
             }
         }
     }
+    .coins {
+        position: absolute;
+    img {
+        animation: rotateSlow 20s linear infinite;
+    }
+    &.bitcoin {
+        top: 10%;
+        left: -1%;
+        width: 73px;
+    }
+    &.letecoin {
+        left: 79%;
+        top: 14%;
+    }
+    &.monero {
+        left: 85%;
+        top: 74%;
+    }
+    &.etherium {
+        top: 85%;
+    }
+}
+}
+
+@media screen and (min-width: 768px) {
+    .generation {
+        .coins {
+            position: absolute;
+            &.bitcoin {
+                top: 8%;
+                left: 15%;
+                width: 100px;
+            }
+            &.monero {
+                left: 85%;
+                top: 77%;
+            }
+            &.etherium {
+                top: 85%;
+            }
+        }
+    }
 }

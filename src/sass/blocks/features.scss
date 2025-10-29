@@ -1,6 +1,7 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .features {
+    position: relative;
     padding-top: 89px;
     &__title {
         text-align: center;
@@ -42,6 +43,26 @@
     }
     .title-simple-text{
         opacity: 0.6;
+    }
+    .coins {
+        position: absolute;
+    img {
+        animation: rotateSlow 20s linear infinite;
+    }
+    &.bitcoin {
+        top: 18%;
+        left: 70%;
+    }
+}
+}
+
+@media screen and (min-width: 425px) {
+    .features {
+    .coins {
+    &.bitcoin {
+        top: 15%;
+    }
+}
     }
 }
 

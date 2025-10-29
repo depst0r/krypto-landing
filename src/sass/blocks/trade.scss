@@ -1,5 +1,6 @@
 @use '/src/sass/base/variables.scss'as *;
 .trade {
+    position: relative;
     padding-top: 50px;
     &__title {
         display: flex;
@@ -37,6 +38,16 @@
         justify-content: left;
         gap: 10.5px;
     }
+    .coins {
+        position: absolute;
+    img {
+        animation: rotateSlow 20s linear infinite;
+    }
+    &.etherium {
+        top: 100%;
+        left: 64%;
+    }
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -47,5 +58,10 @@
             justify-content: center;
             gap: 121px;
         }
+    .coins {
+        &.etherium {
+            left: 78%;
+    }
+}
     }
 }
