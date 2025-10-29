@@ -204,46 +204,23 @@ window.addEventListener('DOMContentLoaded', () => {
         console.error('❌ 8. Ошибка при инициализации Swiper:', error);
     }
 
-    // const userSlideComponent = {
-    //     users: [
-    //         {
-    //             image: '/src/img/users/Ellipse.png',
-    //             name: 'Cameron Williamson',
-    //             role: 'FX Trader'
-    //         },
-    //         {
-    //             image: '/src/img/users/Ellipse2.png',
-    //             name: 'Bessie Cooper',
-    //             role: 'Stock Manager'
-    //         },
-    //         {
-    //             image: '/src/img/users/Ellipse3.png',
-    //             name: 'Albert Flores',
-    //             role: 'Crypto Analyst'
-    //         },
-    //         {
-    //             image: '/src/img/users/Ellipse.png',
-    //             name: 'Sarah Wilson',
-    //             role: 'Crypto Expert'
-    //         },
-    //         {
-    //             image: '/src/img/users/Ellipse2.png',
-    //             name: 'David Brown',
-    //             role: 'Blockchain Developer'
-    //         },
-    //         {
-    //             image: '/src/img/users/Ellipse3.png',
-    //             name: 'Emma Davis',
-    //             role: 'Financial Advisor'
-    //         }
-    //     ]
-    // }
+    //!FORM
 
-    // const addUserSlide = async () => {
-    //     await 
-    // }
+    const form = document.querySelector('form'),
+        formInput = form.querySelector('input');
 
-    addSlides()
+    const formSubmit = () => {
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            console.log('form - submit', formInput.value)
+
+            form.reset();
+        })
+    }
+
+    formSubmit();
+    addSlides();
     showMenu();
     setClock('.timer', deadLine)
 });
