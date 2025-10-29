@@ -30,4 +30,3 @@
 | ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white) | Слайдеры |
 | ![CoinGecko API](https://img.shields.io/badge/CoinGecko_API-8DC63F?style=flat-square) | Данные криптовалют |
 
-## 🎯 Структура проекта
