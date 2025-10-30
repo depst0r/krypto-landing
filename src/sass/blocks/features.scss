@@ -57,12 +57,12 @@
 }
 
 @media screen and (min-width: 425px) {
-    .features {
+.features {
     .coins {
-    &.bitcoin {
-        top: 15%;
-    }
-}
+        &.bitcoin {
+            top: 15%;
+        }
+        }
     }
 }
 
@@ -73,8 +73,15 @@
             grid-template-rows: repeat(3, auto);
             gap: 30px;
         }
-    }   
-}
+    .coins {
+        &.bitcoin {
+            top: 15%;
+            left: 82%;
+        }
+        }
+    }
+}   
+
 
 @media screen and (min-width: 1024px) {
     .features {

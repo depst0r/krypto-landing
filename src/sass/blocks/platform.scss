@@ -1,4 +1,5 @@
 .platform {
+    position: relative;
     margin-top: 40px;
     background: url('/src/img/platform/Bg.png') center center / cover no-repeat;
     height: 600px;
@@ -17,6 +18,18 @@
         justify-content: center;
         gap: 40px;
     }
+
+    .coins {
+        position: absolute;
+    img {
+        animation: rotateSlow 20s linear infinite;
+    }
+    &.monero {
+        left: 4%;
+        top: 102%;
+    }
+
+}
 }
 
 @media screen and (min-width: 1024px) {
