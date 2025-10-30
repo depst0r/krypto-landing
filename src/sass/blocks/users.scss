@@ -1,5 +1,6 @@
 @use '/src/sass/base/variables.scss'as *;
 .users {
+    position: relative;
     padding-top: 91px;
     &__title {
         display: flex;
@@ -50,6 +51,38 @@
         }
         &-comment {
             text-align: center;
+        }
+    }
+    .coins {
+        position: absolute;
+    img {
+        animation: rotateSlow 20s linear infinite;
+    }
+    &.bitcoin {
+        top: 104%;
+        left: -1%;
+        width: 73px;
+    }
+    &.etherium {
+        top: 101%;
+        width: 70px;
+        left: 76%;
+    }
+}
+}
+
+@media screen and (min-width: 768px) {
+    .users {
+        .coins {
+            &.bitcoin {
+                top: 104%;
+                left: 4%;
+                width: 100%;
+            }
+            &.etherium {
+                top: 124%;
+                left: 89%;
+            }
         }
     }
 }
