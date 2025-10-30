@@ -1,6 +1,7 @@
 @use '/src/sass/base/variables.scss'as *;
 
 .market {
+    position: relative;
     padding-top: 91px;
     &__titles {
         text-align: center;
@@ -58,6 +59,17 @@
             padding: 5px;
         }
     }
+
+.coins {
+        position: absolute;
+    img {
+        animation: rotateSlow 20s linear infinite;
+    }
+    &.monero {
+        left: 70%;
+        top: 101%;
+    }
+}
 }
 
 
@@ -78,6 +90,12 @@
             gap: 12px;
             .title-card {
                 font-size: 24px;
+            }
+        }
+        .coins {
+            &.monero {
+                left: 85%;
+                top: 96%;
             }
         }
     }

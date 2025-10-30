@@ -59,12 +59,12 @@
         animation: rotateSlow 20s linear infinite;
     }
     &.bitcoin {
-        top: 16%;
+        top: 104%;
         left: -1%;
         width: 73px;
     }
     &.etherium {
-        top: 33%;
+        top: 101%;
         width: 70px;
         left: 76%;
     }
@@ -75,13 +75,13 @@
     .users {
         .coins {
             &.bitcoin {
-                top: 23%;
+                top: 104%;
                 left: 4%;
                 width: 100%;
             }
             &.etherium {
-                top: 13%;
-                left: 86%;
+                top: 124%;
+                left: 89%;
             }
         }
     }
